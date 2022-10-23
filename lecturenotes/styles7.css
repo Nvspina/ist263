@@ -6,9 +6,12 @@ a:hover{
     color: #fc8c03;
 }
 
+body {
+    background-color:#000000;
+}
 
 p{
-    background-image: url("/images/pumpkin.jpeg");
+    background-image: url("../images/pumpkin.jpeg");
 }
 
 

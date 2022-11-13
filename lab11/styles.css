@@ -9,9 +9,12 @@ color: #F1F1F1;
 body{
 background-color:#384344;
 }
-p, div, li{
+p, div{
 color:#c5c5c5;
 }
+
+.color{color:#c5c5c5;}
+
 h1{
 color:#c5c5c5;
 }

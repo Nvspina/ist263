@@ -8,34 +8,94 @@
     <link rel="stylesheet" href="styles.css"/>
     <style>
         .yachtrock {display: flex;
-        padding: 20px;}
-        .steelydan,.steelydan2,.doobies {padding: 20px;}
+        padding: 20px; }
+        .steelydan,.steelydan2,.doobies {padding: 30px; 
+            border-radius: 50px;
+          border: 5px solid #474646;
+     border-spacing: 20px;}
         .steelydan {flex: 1; order: 1;}
         .steelydan2 {flex: 1; order: 2;}
         .doobies {flex: 1; order:3;}
+
+
+     .button {
+  background-color: #d8f0f3;
+  color: rgb(2, 0, 0);
+  padding: 20px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.dropmenu {
+    display: inline-block;
+    position: relative;
+
+}
+        .dropmenulinks {
+  display: none;
+  position: absolute;
+  background-color: #dbcece;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropmenu:hover .dropmenulinks {
+  display: block;
+}
+.dropmenulinks a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#skip {
+            background-color: rgb(204, 201, 194);
+            border: 1px solid rgb(240, 229, 229);
+            padding: 2px;
+            position: absolute;
+            left: -999px;
+        }
+        #skip:focus{
+            left:10px;
+        }
+
+@media only screen and (max-width: 800px) {
+    .yachtrock {flex-direction: column; }
+}
+
     </style>
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Kanit&display=swap" rel="stylesheet">
+</head>  
 </head>
 <body> 
+    <header>
+     <a id="skip" tabindex="1" href="#content">Skip to content</a>
+    </header>
     <nav>
-        <a href="../project5/project5home.html">Home</a> |
-        <a href="../project5/project5page2.html">History</a> |
-        <a href="../project5/project5page3.html">Albums</a>
+        <div class="dropmenu">
+            <button class="button">Menu</button>
+            <div class="dropmenulinks">
+              <a href="../finalproject/index.html">Home</a>
+              <a href="../finalproject/history.html">History</a>
+              <a href="../finalproject/albums.html">Albums</a>
+            </div>
     </nav>
     <h1>What Exactly Is Yacht Rock?</h1>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/85oeJdyOfSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p>The music that we now know as Yacht Rock was not referred to as such during its peak years. In fact, the term was only coined as recently as 2005. TV writer, JD Ryznar coined the term after noticing similarities between Steely Dan, Toto, and The Doobie Brothers. He found that the band members collaborated frequently with each other, and their album covers would often feature pictures of guys on boats. </p>
     <div class="yachtrock">
     <article class="steelydan">
-        <img src="../projectimages/steelydan2.jpeg" alt="steelydan2"><br>
-      <p>In fact, Ryznar wrote and directed an online video miniseries Yacht Rock which told fictionalized accounts about the bands of the genre in the 1970s. While the series wasn't necessarily popular, it helped coin the term and helped categorize similar sounding bands into a conglomerate. </p>
+        <img src="../projectimages/steelydan2.jpeg" alt="steelydanlive"><br>
+      <p>In fact, Ryznar wrote and directed an online video miniseries Yacht Rock which told fictionalized accounts about the bands of the genre in the 1970s. While the series wasn't necessarily popular, it helped coin the term and helped categorize similar sounding bands into a conglomerate. This would inspire dedicated playlists on music streaming platforms and even a SiriusXM radio station dedicated to the subgenre.</p>
       </article>
     <article class="steelydan2">
-       <img src="../projectimages/steelydan.jpeg" alt="steelydan1"><br>
+       <img src="../projectimages/steelydan.jpeg" alt="steelydanliveagain"><br>
        <p>During the 1970s and 1980s, all of the yacht rock bands were categorized under the broad subgenre, soft rock. This would refer to acts that had the style of a singer-songwriter, morphed with commercial pop productions for radio friendly songs. The bands would often have straightforward melodies with bigger production styles. While all yacht rock bands can be considered as part of the soft rock genre, not all soft rock musicians can be placed under the yacht rock niche.</p>
        </article>
     <article class= "doobies">
     
-       <img src="../projectimages/doobiebrothers.jpeg" alt="doobiebrothers"><br>
+       <img src="../projectimages/doobiebrothers.jpeg" alt="doobiebrotherslive"><br>
        <p>The qualifications for a band to be considered yacht rock vary depending on who you ask. Music Critic Matt Collar believes the rules for yacht rock to be “keeping a song smooth, even when it grooves, with more emphasis on melody than the beat; keep the emotions light, even when the sentiment turns sad, and always keep it catchy.” This means not every song in a band's discography will fall under the criteria for the genre. </p>
     </article>
     </div>

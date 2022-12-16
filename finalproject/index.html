@@ -37,18 +37,66 @@
     height: 0;
     }
 }
-    
 
+.button {
+  background-color: #d8f0f3;
+  color: rgb(2, 0, 0);
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+.dropmenu {
+    display: inline-block;
+    position: relative;
+  
+}
+        .dropmenulinks {
+  display: none;
+  position: absolute;
+  background-color: #dbcece;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropmenu:hover .dropmenulinks {
+  display: block;
+}
+.dropmenulinks a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+#skip {
+            background-color: rgb(204, 201, 194);
+            border: 1px solid rgb(240, 229, 229);
+            padding: 2px;
+            position: absolute;
+            left: -999px;
+        }
+        #skip:focus{
+            left:10px;
+        }
         
     </style>
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Kanit&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+     <a id="skip" tabindex="1" href="#content">Skip to content</a>
+    </header>
     <nav>
-        <a href="../project5/project5home.html">Home</a> |
-        <a href="../project5/project5page2.html">History</a> |
-        <a href="../project5/project5page3.html">Albums</a>
+        <div class="dropmenu">
+            <button class="button">Menu</button>
+            <div class="dropmenulinks">
+              <a href="../finalproject/index.html">Home</a>
+              <a href="../finalproject/history.html">History</a>
+              <a href="../finalproject/albums.html">Albums</a>
+            </div>
+            
     </nav>
-    
     <div class="video">
     <iframe width="700" height="500" src="https://www.youtube.com/embed/VzgQoGvSKA4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
